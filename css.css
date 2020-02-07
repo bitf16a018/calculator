@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Digital-7;
+    src: url('digital-7.regular.ttf');
+}
+
 #div1 {
     margin: auto;
     width: 375px;
@@ -29,12 +34,13 @@
 #result {
     text-align: right;
     border-top: 0px;
+    margin-top: -1px;
     margin-left: 65px;
 }
 
 .display {
-    font-family: digital-7;
-    font-size: 20px;
+    font-family: Digital-7;
+    font-size: 25px;
     width: 250px;
     background-color: rgba(179, 193, 176, 1);
     padding: 10px 0px 0px 0px;
