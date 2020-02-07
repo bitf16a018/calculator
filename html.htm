@@ -1,40 +1,107 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="css.css" />
-	
-	</head>
-	<body>
-		<div id="screen_div">
-			<input type="text" id="screen" class="display" />
-			<br>
-			<input type="text" id="result" class="display" />
-			<br>
-		</div>
-		<div id="button_div">
-			<button type="button" class="buttons" id="but7" onclick="func1(this.value)" value="7">7</button>
-			<button type="button" class="buttons" id="but8" onclick="func1(this.value)" value="8">8</button>
-			<button type="button" class="buttons" id="but9" onclick="func1(this.value)" value="9">9</button>
-			<button type="button" class="buttons" id="add" onclick="func1(this.value)" value="+">+</button>
-			<br>
-			<button type="button" class="buttons" id="but4" onclick="func1(this.value)" value="4">4</button>
-			<button type="button" class="buttons" id="but5" onclick="func1(this.value)" value="5">5</button>
-			<button type="button" class="buttons" id="but6" onclick="func1(this.value)" value="6">6</button>
-			<button type="button" class="buttons" id="sub" onclick="func1(this.value)" value="-">-</button>
-			<br>
-			<button type="button" class="buttons" id="but1" onclick="func1(this.value)" value="1">1</button>
-			<button type="button" class="buttons" id="but2" onclick="func1(this.value)" value="2">2</button>
-			<button type="button" class="buttons" id="but3" onclick="func1(this.value)" value="3">3</button>
-			<button type="button" class="buttons" id="mul" onclick="func1(this.value)" value="*">*</button>
-			<br>
-			<button type="button" class="buttons" id="but0" onclick="func1(this.value)" value="0">0</button>
-			<button type="button" class="buttons" id="equal" onclick="func2()" >=</button>
-			<button type="button" class="buttons" id="div" onclick="func1(this.value)" value="/">/</button>
-			<br>
-			<button type="button" class="buttons" id="clr" onclick="func3()" value="null">C</button>
-		</div>
-		
-		
-		<script src="js.js"></script>
-	</body>
+
+    <head>
+        <link rel="stylesheet" href="css.css" />
+    </head>
+
+    <body>
+        <div id="div1">
+            <img id="img1" src="./images/1.png" alt="top" />
+        </div>
+        <div class="inner" id="div2">
+            <img id="img2" src="./images/2.png" alt="topLeft" />
+            <div class="inner" id="div3">
+                <div class="inner" id="div4">
+                    <input class="display" id="screen" type="text" />
+                    <input class="display" id="result" type="text" />
+                </div>
+            </div>
+            <div id="div5">
+                <img src="./images/3.png" alt="upperRight" />
+            </div>
+            <div id="div6">
+                <img src="./images/4.png" alt="screenBottom" />
+            </div>
+            <div id="div7">
+                <img src="./images/5.png" alt="offbutton" />
+            </div>
+            <div id="div8">
+                <img src="./images/clr.png" alt="clearButton" onclick="func3()" value="null" />
+            </div>
+            <div id="div9">
+                <img src="./images/6.png" />
+            </div>
+            <div id="div10">
+                <img src="./images/7.png" />
+            </div>
+            <div id="div11">
+                <img src="./images/8.png" />
+            </div>
+            <div id="div12">
+                <img src="./images/9.png" alt="number7" onclick="func1(7)" value="7" />
+            </div>
+            <div id="div13">
+                <img src="./images/10.png" alt="number8" onclick="func1(8)" value="8" />
+            </div>
+            <div id="div14">
+                <img src="./images/11.png" alt="number9" onclick="func1(9)" value="9" />
+            </div>
+            <div id="div15">
+                <img src="./images/divide.png" alt="divide" onclick="divsign()" />
+            </div>
+            <div id="div16">
+                <img src="./images/12.png" />
+            </div>
+            <div id="div17">
+                <img src="./images/13.png" />
+            </div>
+            <div id="div18">
+                <img src="./images/multiply.png" alt="multiply" onclick="mulsign()" />
+            </div>
+            <div id="div19">
+                <img src="./images/14.png" alt="number6" onclick="func1(6)" />
+            </div>
+            <div id="div20">
+                <img src="./images/15.png" alt="number5" onclick="func1(5)" />
+            </div>
+            <div id="div21">
+                <img src="./images/16.png" alt="number4" onclick="func1(4)" />
+            </div>
+            <div id="div22">
+                <img src="./images/17.png" alt="number1" onclick="func1(1)" />
+            </div>
+            <div id="div23">
+                <img src="./images/18.png" alt="number2" onclick="func1(2)" />
+            </div>
+            <div id="div24">
+                <img src="./images/19.png" alt="number3" onclick="func1(3)" />
+            </div>
+            <div id="div25">
+                <img src="./images/subtract.png" alt="subtract" onclick="subsign()" />
+            </div>
+            <div id="div26">
+                <img src="./images/20.png" />
+            </div>
+            <div id="div27">
+                <img src="./images/21.png" />
+            </div>
+            <div id="div28">
+                <img src="./images/add.png" alt="addition" onclick="addsign()" value="+" />
+            </div>
+            <div id="div29">
+                <img src="./images/eval.png" alt="equal" onclick="func2()" />
+            </div>
+            <div id="div30">
+                <img src="./images/point.png" alt="point" onclick="pntsign()" />
+            </div>
+            <div id="div31">
+                <img src="./images/22.png" alt="numberzero" onclick="func1(0)" />
+            </div>
+            <div id="div32">
+                <img src="./images/23.png" />
+            </div>
+            <script src="js.js"></script>
+    </body>
+
 </html>
