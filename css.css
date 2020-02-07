@@ -1,0 +1,52 @@
+input {
+	font-size: 20px;
+}
+
+.display {
+	font-size: 20px;
+}
+
+#screen {
+	border-bottom: 0px;
+}
+
+#result {
+	border-top: 0px;
+	text-align: right;
+}
+
+.buttons {
+	font-size: 50px;
+	margin: 5px 0px 0px 5px;
+	border-radius: 10px;
+}
+
+#sub {
+	width: 46px;
+}
+
+#mul {
+	width: 46px;
+}
+
+#div {
+	width: 46px;
+}
+
+#equal {
+	width: 96px;
+}
+
+#screen_div  {
+	margin-top: 50px;
+	margin-left: 500px;
+}
+
+#button_div  {
+	margin-top: 50px;
+	margin-left: 515px;
+}
+
+#clr {
+	width: 204px;
+}
