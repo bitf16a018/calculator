@@ -29,6 +29,7 @@
     border-bottom: 0px;
     margin-top: -510px;
     margin-left: 65px;
+    outline: none;
 }
 
 #result {
@@ -36,6 +37,7 @@
     border-top: 0px;
     margin-top: -1px;
     margin-left: 65px;
+    outline: none;
 }
 
 .display {
